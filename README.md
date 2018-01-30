@@ -18,8 +18,8 @@
 * Create a simple website where users can chat
 * Create an input that allows a user to choose their username
 * Display a log of chats with usernames, messages and timestamps
-* Add Socket IO to your frontend, with a means for adding subsciber handlers
-* Subscibe to the backend events
+* Add Socket IO to your frontend, with a means for adding subscriber handlers
+* Subscribe to the backend events
 
 ### Models
 * Use Vanilla ES6 classes to model chat messages
@@ -37,7 +37,7 @@
 #### Backend
 * Add Socket IO to your backend, with a means for adding subscriber handlers 
 * Subscribe to events dispatched from the frontend
-  * In your subscibers publish data to the frontends to update the chat
+  * In your subscribers publish data to the frontends to update the chat
 * You do not need to store data to a database. It's OK to store data in the
   global state of the server for now.
 
