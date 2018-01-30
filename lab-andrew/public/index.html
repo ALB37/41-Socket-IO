@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/styles.css" rel="stylesheet">
+  <title>Andrew's Vaporwave Chat App</title>
+</head>
+<body>
+  <h1>Andrew's Vaporwave Chat App</h1>
+  <p id="instructions">Send a message! Type in your name to get started!</p>
+  <div id="welcome-message"></div>
+  <div id="forms">
+
+    <form id="set-username-form">
+      <input id="username-input" />
+      <button type="submit">Set Username</button>
+    </form>
+    
+    <form id="send-message-form" style="display: none;">
+      <input id="message-input" />
+      <button type="submit">Send Message</button>
+    </form>
+    
+  </div>
+  <div id="messages"></div>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/model/chat-message.js"></script>
+<script src="/js/main.js"></script>
+</html>

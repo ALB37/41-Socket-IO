@@ -1,0 +1,30 @@
+{
+  "name": "lab-andrew",
+  "version": "1.0.0",
+  "description": "chat-app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ALB37/41-Socket-IO.git"
+  },
+  "keywords": [
+    "socket.io",
+    "chat",
+    "real-time"
+  ],
+  "author": "Andrew Bloom",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ALB37/41-Socket-IO/issues"
+  },
+  "homepage": "https://github.com/ALB37/41-Socket-IO#readme",
+  "dependencies": {
+    "eslint": "^4.16.0",
+    "express": "^4.16.2",
+    "socket.io": "^2.0.4"
+  }
+}
