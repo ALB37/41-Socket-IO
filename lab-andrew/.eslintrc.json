@@ -15,7 +15,7 @@
     "__TITLE__": false,
     "__DEBUG__": false
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": ["eslint:recommended"],
   "parserOptions": {
     "sourceType": "module",
     "ecmaVersion": 6,
@@ -34,6 +34,5 @@
     "space-infix-ops": ["error", {"int32Hint": false}],
     "comma-dangle": ["error", "always-multiline"],
     "semi": [ "error", "always" ]
-  },
-  "plugins": ["react"]
+  }
 }
