@@ -8,18 +8,21 @@
 </head>
 <body>
   <h1>Andrew's Vaporwave Chat App</h1>
-  <p>Send a message!</p>
-  
-  <form id="set-username-form">
-    <input id="username-input" />
-    <button type="submit">Set Username</button>
-  </form>
-  
-  <form id="send-message-form">
-    <input id="message-input" />
-    <button type="submit">Send Message</button>
-  </form>
-  
+  <p id="instructions">Send a message! Type in your name to get started!</p>
+  <div id="welcome-message"></div>
+  <div id="forms">
+
+    <form id="set-username-form">
+      <input id="username-input" />
+      <button type="submit">Set Username</button>
+    </form>
+    
+    <form id="send-message-form" style="display: none;">
+      <input id="message-input" />
+      <button type="submit">Send Message</button>
+    </form>
+    
+  </div>
   <div id="messages"></div>
 </body>
 <script src="/socket.io/socket.io.js"></script>

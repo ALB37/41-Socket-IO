@@ -16,6 +16,7 @@ class ChatMessage {
     container.classList.add('message');
     timestamp.classList.add('timestamp');
     username.classList.add('username');
+    message.classList.add('text-content');
 
     timestamp.textContent = this.timestamp;
     username.textContent = this.username + ':';

@@ -19,7 +19,7 @@ body {
 
 .username, .timestamp {
   text-align: left;
-  margin-right: 10%;
+  margin-right: 5%;
 }
 
 div.message:nth-child(even){
@@ -28,4 +28,21 @@ div.message:nth-child(even){
 
 div.message:nth-child(odd){
   background: white;
+}
+
+.message {
+  position: relative;
+}
+h1, h2, p {
+  text-align: center;
+}
+
+#forms {
+  width: 250px;
+  margin: 5% auto;
+}
+
+.text-content {
+  position: absolute;
+  right: 0;  
 }

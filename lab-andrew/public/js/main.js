@@ -2,17 +2,26 @@
 
 const socket = io(); //eslint-disable-line
 
-let sendMessageForm = document.getElementById('send-message-form');
-let messageInput = document.getElementById('message-input');
-let messagesContainer = document.getElementById('messages');
-let setUsernameForm = document.getElementById('set-username-form');
-let usernameInput = document.getElementById('username-input');
+const sendMessageForm = document.getElementById('send-message-form');
+const instructions = document.getElementById('instructions');
+const welcomeMessage = document.getElementById('welcome-message');
+const messageInput = document.getElementById('message-input');
+const messagesContainer = document.getElementById('messages');
+const setUsernameForm = document.getElementById('set-username-form');
+const usernameInput = document.getElementById('username-input');
 
 setUsernameForm.addEventListener('submit', event => {
   event.preventDefault();
-  let username = usernameInput.value;
+  const username = usernameInput.value;
   socket.emit('set-username', {username});
+  const welcomeHeader = document.createElement('h2');
+  welcomeHeader.textContent = `Welcome, ${username}!`;
+  welcomeMessage.appendChild(welcomeHeader);
+  instructions.style.display = 'none';
+  setUsernameForm.style.display = 'none';
+  sendMessageForm.style.display = 'block';
   usernameInput.value = null;
+
 });
 
 sendMessageForm.addEventListener('submit', event => {
